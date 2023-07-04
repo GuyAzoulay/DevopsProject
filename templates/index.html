@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web App</title>
+    <style>
+        /* Styles omitted for brevity */
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+            margin-right: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            font-size: 14px;
+            color: #999;
+        }
+        .game-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .game-item {
+            flex: 0 0 300px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .game-item:hover {
+            transform: translateY(-5px);
+        }
+        .game-image {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+        .game-info {
+            padding: 20px;
+            background-color: #fff;
+        }
+        .game-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .game-description {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Game Server</h1>
+    <p>Here are our games:</p>
+    <div class="game-list">
+        <div class="game-item">
+            <div class="game-info">
+                <h3 class="game-title">Memory Game</h3>
+                <img src="https://media3.giphy.com/media/QSSVcSKeQYJpu/200w.webp?cid=ecf05e47wccdwkqujxxzyj1dx4pbti81aycmh20eho20oqdf&ep=v1_gifs_search&rid=200w.webp&ct=g" alt="Memory Game" class="game-image">
+                <p class="game-description">Add Description.</p>
+            </div>
+        </div>
+        <div class="game-item">
+            <div class="game-info">
+                <h3 class="game-title">Guess Game</h3>
+                <img src="https://media4.giphy.com/media/Rs2QPsshsFI9zeT4Kn/200w.webp?cid=ecf05e47ua8fc5oq4aidqpvfqjwf5nclyfjwzsal0gc5wpyn&ep=v1_gifs_search&rid=200w.webp&ct=g" alt="Guess Game" class="game-image">
+                <p class="game-description">Add Description</p>
+            </div>
+        </div>
+        <div class="game-item">
+            <div class="game-info">
+                <h3 class="game-title">Currency Roulette Game</h3>
+                <img src="https://media0.giphy.com/media/l2SpYSNrKPONySXYY/200.webp?cid=ecf05e47zdzilduvuk8ruscszzeqiqdgemyux0a923hf1wzd&ep=v1_gifs_search&rid=200.webp&ct=g" alt="Currency Roulette Game" class="game-image">
+                <p class="game-description">Add Description</p>
+            </div>
+        </div>
+    </div>
+    <a href="/win" class="button">Go to Win Page</a>
+    <a href="/lost" class="button">Go to Lost Page</a>
+    <p class="footer">Thank you for visiting!</p>
+</body>
+</html>
